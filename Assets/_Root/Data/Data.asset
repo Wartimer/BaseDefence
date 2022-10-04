@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f878fee75362cc049b6890d9b3d4b167, type: 3}
+  m_Name: Data
+  m_EditorClassIdentifier: 
+  _playerData:
+    m_AssetGUID: b8def983a5a190d4a958de08135d8d10
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _cameraData:
+    m_AssetGUID: fb742a689e3a4cb46b4665f2dc872122
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _uiData:
+    m_AssetGUID: 2068b8d551f74384bb895018ce1707ac
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _enemyDataList:
+    m_AssetGUID: 1ec918cf37dc2de4aa4c16683e242227
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _mapData:
+    m_AssetGUID: 7fbf6a709c8c97c49855ca139deb2da3
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

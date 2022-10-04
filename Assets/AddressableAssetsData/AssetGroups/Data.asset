@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Data
+  m_EditorClassIdentifier: 
+  m_GroupName: Data
+  m_Data:
+    m_SerializedData: []
+  m_GUID: abd62875fee02e444bc673bec6823ce5
+  m_SerializeEntries:
+  - m_GUID: b8def983a5a190d4a958de08135d8d10
+    m_Address: PlayerData
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2068b8d551f74384bb895018ce1707ac
+    m_Address: UIData
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1ec918cf37dc2de4aa4c16683e242227
+    m_Address: EnemyDataList
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fb742a689e3a4cb46b4665f2dc872122
+    m_Address: CameraData
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7fbf6a709c8c97c49855ca139deb2da3
+    m_Address: MapData
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 360b062c14873d146922b7a56e2bf5f3, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: eeff9ea725b3cb349a5567259d4f661d, type: 2}
+    - {fileID: 11400000, guid: 4eb9002846630634389127e17d420445, type: 2}
