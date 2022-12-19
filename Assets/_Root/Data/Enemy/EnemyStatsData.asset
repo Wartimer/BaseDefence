@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: EnemyStatsData
   m_EditorClassIdentifier: 
   _hp: 10
-  _walkSpeed: 1
+  _walkSpeed: 2
   _runSpeed: 3
-  _stopingDistance: 1.5
+  _stopingDistance: 0.3
+  _visDist: 5
+  _visAngle: 45
+  _meleeDist: 1
+  _combatRotSpeed: 5

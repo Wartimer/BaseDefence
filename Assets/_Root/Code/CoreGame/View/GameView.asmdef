@@ -1,0 +1,17 @@
+{
+    "name": "GameView",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5eb83ccd7aba06e4994b23f60ebadc7f",
+        "GUID:70d945ac428a03948a6be99cdb59c906"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
