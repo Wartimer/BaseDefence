@@ -1,6 +1,6 @@
 ﻿namespace _Root.Code.Abstractions
 {
-    internal interface ILateExecute : IController
+    public interface ILateExecute : IController
     {
         void LateExecute();
     }

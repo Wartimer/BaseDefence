@@ -1,11 +1,10 @@
 using System.Collections.Generic;
-using Drop;
-using TMPro;
+using _Root.Code.Abstractions;
 using UnityEngine;
 
-namespace InteractiveObjects
+namespace _Root.Code.Utility
 {
-    internal class DropedCurrencyView : MonoBehaviour, IDropedCurrency
+    internal class CurrencyView : MonoBehaviour, IDropedCurrency
     {
         
         [SerializeField] private CurrencyType _type;
