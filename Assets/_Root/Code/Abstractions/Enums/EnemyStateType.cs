@@ -1,4 +1,4 @@
-namespace UnitBehavior
+namespace _Root.Code.Abstractions.Enums
 {
     public enum EnemyStateType : uint
     {

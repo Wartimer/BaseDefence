@@ -8,9 +8,9 @@ using UnityEngine.ResourceManagement.ResourceProviders;
 using UnityEngine.SceneManagement;
 using Object = UnityEngine.Object;
 
-namespace Siva.Tool.ResourceManagement
+namespace Utility
 {
-    internal static class AddressablesLoader
+    public static class AddressablesLoader
     {
         private static readonly Dictionary<AssetReference, List<Object>> _loadedDataAssets =
             new Dictionary<AssetReference, List<Object>>();

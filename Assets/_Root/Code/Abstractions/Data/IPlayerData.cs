@@ -1,4 +1,4 @@
-namespace _Root.Code.Abstractions.Data
+namespace _Root.Code.Abstractions
 {
     public interface IPlayerData
     {

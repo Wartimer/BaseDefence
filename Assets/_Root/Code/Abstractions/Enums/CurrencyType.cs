@@ -1,4 +1,4 @@
-namespace Drop
+namespace _Root.Code.Abstractions
 {
     public enum CurrencyType : uint
     {

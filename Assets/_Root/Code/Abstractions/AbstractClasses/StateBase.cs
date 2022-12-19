@@ -1,4 +1,4 @@
-using UnitBehavior;
+using _Root.Code.Abstractions.Enums;
 using UnityEngine;
 
 
@@ -48,11 +48,11 @@ namespace _Root.Code.Abstractions
         {
 
             var enemyTransform = _enemy.View.transform;
-            Vector3 direction = _enemy.Player.PlayerView.Transform.position - enemyTransform.position;
+            Vector3 direction = _enemy.Player.View.transform.position - enemyTransform.position;
             var angle = Vector3.Angle(direction, enemyTransform.forward);
 
-            if (direction.magnitude < _enemy.EnemyData.EnemyStatsData.VisDistance &&
-                angle < _enemy.EnemyData.EnemyStatsData.VisAngle)
+            if (direction.magnitude < _enemy.EnemyData.EnemyAIData.VisDistance &&
+                angle < _enemy.EnemyData.EnemyAIData.VisAngle)
             {
                 return true;
             }
@@ -63,8 +63,8 @@ namespace _Root.Code.Abstractions
         public bool CanAttackPlayer()
         {
             var enemyTransform = _enemy.View.transform;
-            Vector3 direction = _enemy.Player.PlayerView.Transform.position - enemyTransform.position;
-            if (direction.magnitude > _enemy.EnemyData.EnemyStatsData.MeleeDist) return false;
+            Vector3 direction = _enemy.Player.View.transform.position - enemyTransform.position;
+            if (direction.magnitude > _enemy.EnemyData.EnemyAIData.MeleeDist) return false;
             return true;
         }
 

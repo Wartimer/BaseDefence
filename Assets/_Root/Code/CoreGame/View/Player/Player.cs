@@ -1,19 +1,15 @@
 ﻿using _Root.Code.Abstractions;
-using Data;
-using StarterAssets;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Player
 {
-    internal class Player 
+    internal class Player : PlayerBase, ITarget
     {
-        public int Priority { get; }
-        
-        public Transform Transform => _view.transform;
-        public PlayerData Data { get; }
-        
+        public IPlayerData Data { get; }
         private PlayerView _view;
+        
+        public int Priority { get; }
+        public Transform Transform => _view.transform;
         public PlayerView PlayerView => _view;
         
         private ThirdPersonController _playerControl;

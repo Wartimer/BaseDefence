@@ -19,21 +19,5 @@ namespace Player
         public CapsuleCollider CapsuleCollider => _capsuleCollider ? _capsuleCollider : (_capsuleCollider = gameObject.GetComponent<CapsuleCollider>());
         public BoxCollider BoxCollider => _boxCollider ? _boxCollider : (_boxCollider = gameObject.GetComponent<BoxCollider>());
         
-        private void OnTriggerEnter(Collider other)
-        {
-            var isHit = other.TryGetComponent(out IEnemy enemyView);            
-            if (isHit && !other.isTrigger)
-            {
-                
-            }
-        }
-
-        private void OnTriggerStay(Collider other)
-        {
-            if (other.gameObject.TryGetComponent(out IInteractable interactable))
-            {
-                
-            }
-        }
     }
 }

@@ -1,11 +1,9 @@
 using UnityEngine;
 using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
-using Siva.Tool.ResourceManagement;
-using UnityEngine.ResourceManagement.ResourceProviders;
 using UnityEngine.SceneManagement;
+using Utility.ResourceManagement;
 
-namespace Data
+namespace _Root.Code.Data
 {
     [CreateAssetMenu(fileName = nameof(Data), menuName = "Data" + nameof(Data))]
     internal class Data : ScriptableObject

@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using _Root.Code.Abstractions;
+using Player;
 using Siva.Tool.ResourceManagement;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -13,7 +14,7 @@ namespace Data
         [SerializeField] private float health;
         [SerializeField] private int speed;
 
-        public IPlayer PlayerView => AddressablesLoader.LoadGameObject(_playerView).GetComponent<PlayerView>();
+        public IPlayer PlayerView => AddressablesLoader.LoadGameObject(_playerView).GetComponent<IPlayer>();
         
         public AnimationData PlayerAnimationData => _playerAnimationData;
 

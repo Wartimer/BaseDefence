@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-namespace Siva.Tool.ResourceManagement
+namespace Utility
 {
     public class NotifyOnDestroy : MonoBehaviour
     {

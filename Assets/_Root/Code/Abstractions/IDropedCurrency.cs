@@ -1,4 +1,4 @@
-using Drop;
+using _Root.Code.Abstractions.Enums;
 using UnityEngine;
 
 namespace _Root.Code.Abstractions

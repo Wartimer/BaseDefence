@@ -1,12 +1,14 @@
+using _Root.Code.Abstractions;
+using _Root.Code.Abstractions.Enums;
 using Enemy;
 using UnityEngine;
 
 namespace UnitBehavior
 {
-    internal sealed class MeleeCombatState : State
+    internal sealed class MeleeCombatState : StateBase
     {
         private float _rotaitionSpeed;
-        public MeleeCombatState(SimpleEnemy enemy) : base(enemy)
+        public MeleeCombatState(IEnemy enemy) : base(enemy)
         {
             _name = EnemyStateType.CombatState;
             _rotaitionSpeed = _enemy.EnemyData.EnemyStatsData.CombatRotSpeed;
@@ -16,7 +18,6 @@ namespace UnitBehavior
         {
             Debug.Log("Enter CombatState state");
             _enemy.EnemyAnimator.SetTrigger("isMeleeCombat");
-            _enemy.NavMeshAgent.enabled = false;
             base.Enter();
         }
 

@@ -8,8 +8,7 @@ using Random = UnityEngine.Random;
 
 namespace Enemy
 {
-    public class EnemyView : EnemyViewBase, IViewProvider
-
+    public class EnemyView : EnemyViewBase
     {
     public EnemyView View { get; private set; }
 

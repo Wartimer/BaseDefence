@@ -2,9 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Object = UnityEngine.Object;
-using _Root.Code.Abstractions;
 
-namespace _Root.Code.Utility
+namespace Utility
 {
     internal class DroppedCurrencyContainer : IInGameObserver<IDropedCurrency>, IDisposable
     {

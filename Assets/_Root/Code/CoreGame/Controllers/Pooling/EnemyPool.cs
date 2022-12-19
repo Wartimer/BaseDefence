@@ -5,13 +5,14 @@ using Spawner;
 using UnityEngine;
 using UnityEngine.Pool;
 using Random = UnityEngine.Random;
+using _Root.Code.Abstractions;
 
 namespace _Root.Code.Utility
 {
-    internal class EnemyPool : PoolBase<SimpleEnemy>
+    internal class EnemyPool : PoolBase<IEnemy> 
     {
         public delegate void OpDelegate();
-        public event Action<SimpleEnemy> EnemyCreated;
+        public event Action<IEnemy> EnemyCreated;
         
         private EnemyFactory _enemyFactory;
         private List<AttackPoint> _targets;
@@ -24,9 +25,9 @@ namespace _Root.Code.Utility
             _fillThePool += SettleThePool;
         }
 
-        public override SimpleEnemy GetObject()
+        public override IEnemy GetObject()
         {
-            if (ObjectPool<>.Count == 0)
+            if (ObjectPool.Count == 0)
             {
                 _fillThePool?.Invoke();
             }
@@ -37,7 +38,7 @@ namespace _Root.Code.Utility
             return enemy;
         }
         
-        public override void ReturnToPool(SimpleEnemy obj)
+        public override void ReturnToPool(IEnemy obj)
         {
             var transform = obj.View.transform;
             transform.SetParent(Root);
@@ -50,7 +51,7 @@ namespace _Root.Code.Utility
         {
             for (var i = 0; i <= PoolCapacity; i++)
             {
-                if (_enemyFactory.GetEnemy(EnemyType.Melee) is SimpleEnemy enemy)
+                if (_enemyFactory.GetEnemy(EnemyType.Melee) is IEnemy enemy)
                 {
                     enemy.Spawn(Root.position);
                     enemy.SetTarget(_targets[Random.Range(0,_targets.Count)]);

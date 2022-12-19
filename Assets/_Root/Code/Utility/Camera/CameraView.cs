@@ -1,9 +1,9 @@
 using Cinemachine;
 using UnityEngine;
 
-namespace GameCamera
+namespace Utility
 {
-    internal class CameraView : MonoBehaviour
+    public class CameraView : MonoBehaviour
     {
         [SerializeField] private CinemachineVirtualCamera _cinemachineVirtualCamera;
         [SerializeField] private Camera _mainCamera;

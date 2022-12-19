@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Drop;
+using _Root.Code.Abstractions.Enums;
 
 namespace Inventory
 {

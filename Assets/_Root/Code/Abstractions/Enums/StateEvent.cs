@@ -1,4 +1,4 @@
-namespace UnitBehavior
+namespace _Root.Code.Abstractions
 {
     public enum StateEvent : byte
     {

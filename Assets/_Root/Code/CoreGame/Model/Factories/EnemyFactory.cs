@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using _Root.Code.Abstractions.Enemy;
+using _Root.Code.Abstractions.Enums;
 using Data;
 using Enemy;
 

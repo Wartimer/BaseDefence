@@ -2,7 +2,7 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using Object = UnityEngine.Object;
 
-namespace ResourceManagement
+namespace Utility
 {
     internal interface IAssetLoader<T>
     {

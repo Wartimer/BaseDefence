@@ -1,13 +1,10 @@
-using _Root.Code.Abstractions.Data;
-using UnityEngine;
+using Player;
 
 namespace _Root.Code.Abstractions
 {
     public interface IPlayer
     {
         public IPlayerData Data { get; }
-        
-        
-        
+        public PlayerViewBase View { get; }
     }
 }

@@ -1,14 +1,12 @@
-using System;
-using Cinemachine;
-using Enemy;
-using UnityEditor;
+using _Root.Code.Abstractions;
+using _Root.Code.Abstractions.Enums;
 using UnityEngine;
 
 namespace UnitBehavior
 {
-    internal sealed class Idle : State
+    internal sealed class Idle : StateBase
     {
-        public Idle(SimpleEnemy enemy) : base(enemy)
+        public Idle(IEnemy enemy) : base(enemy)
         {
             _name = EnemyStateType.Idle;
         }
@@ -16,20 +14,19 @@ namespace UnitBehavior
         public override void Enter()
         {
             _enemy.EnemyAnimator.SetTrigger("isIdle");
-            _enemy.NavMeshAgent.enabled = false;
             base.Enter();
         }
 
         public override void Update(float deltaTime)
         {
             if (!_enemy.View.isActiveAndEnabled) return;
-            if (_enemy.Target == null) _enemy.Target = _enemy.DefaultTarget;
+           
             if (CanSeePlayer())
             {
                 _nextState = new Pursue(_enemy);
                 _stage = StateEvent.Exit;
             }
-            else if (Vector3.Distance(_enemy.Target.Transform.position, _enemy.View.transform.position) > _enemy.EnemyData.EnemyStatsData.MeleeDist)
+            else if (Vector3.Distance(_enemy.Target.Transform.position, _enemy.View.transform.position) > _enemy.EnemyData.EnemyAIData.MeleeDist)
             {
                 _nextState = new Follow(_enemy);
                 _stage = StateEvent.Exit;

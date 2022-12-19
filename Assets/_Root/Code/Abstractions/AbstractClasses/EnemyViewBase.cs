@@ -6,7 +6,7 @@ namespace _Root.Code.Abstractions
     [RequireComponent(typeof(CapsuleCollider))]
     [RequireComponent(typeof(Animator))]
     [RequireComponent(typeof(BoxCollider))]
-    public abstract class EnemyViewBase : MonoBehaviour
+    public abstract class EnemyViewBase : MonoBehaviour, IEnemyView 
     {
         private Rigidbody _rigidbody;
         private CapsuleCollider _collider;

@@ -3,16 +3,16 @@ using UnityEngine;
 
 namespace _Root.Code.Abstractions
 {
-    public abstract class BaseEnemy 
+    public abstract class EnemyBase 
     {
-        public event Action<BaseEnemy> OnDeath;
+        public event Action<EnemyBase> OnDeath;
         
         public EnemyViewBase View { get; private set; }
 
         private IEnemyData _enemyData;
         public IEnemyData EnemyData => _enemyData;
         
-        protected BaseEnemy(IEnemyData enemyData)
+        protected EnemyBase(IEnemyData enemyData)
         {
             _enemyData = enemyData ?? throw new NullReferenceException($"{nameof(enemyData)} is not found");
         }

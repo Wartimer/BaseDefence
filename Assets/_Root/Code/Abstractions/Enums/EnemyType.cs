@@ -1,4 +1,4 @@
-﻿namespace Spawner
+﻿namespace _Root.Code.Abstractions
 {
     public enum EnemyType
     {
